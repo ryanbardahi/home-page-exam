@@ -1,0 +1,142 @@
+/* Color Variables */
+:root {
+    --primary-color: #001F3F;       /* Dark Navy Blue */
+    --secondary-color: #3A6D8C;     /* Medium Blue */
+    --accent-color: #6A9AB0;        /* Light Blue */
+    --background-color: #EAD8B1;    /* Pale Beige */
+    --text-color: #333333;
+    --white-color: #ffffff;
+}
+
+/* Custom Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+h1, h2, .navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color);
+}
+.navbar-brand, .navbar-nav .nav-link {
+    color: var(--white-color) !important;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 31, 63, 0.8)), url('hero-placeholder.jpg') no-repeat center center/cover;
+    color: var(--white-color);
+    padding: 150px 0;
+    text-align: center;
+}
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+#hero .btn {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+}
+#hero .btn:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: navy;
+}
+.carousel-caption p {
+    font-size: 1.1rem;
+    color: navy;
+}
+
+/* Heading Section */
+.section-heading {
+    margin: 60px 0 30px;
+    text-align: center;
+}
+.section-heading h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+.section-heading p {
+    font-size: 1rem;
+    color: #666666;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.card-text {
+    color: #555555;
+}
+.card .btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+}
+.card .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 40px 0;
+}
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    #hero {
+        padding: 100px 0;
+    }
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+}
